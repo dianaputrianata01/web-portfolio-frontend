@@ -17,7 +17,8 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch('http://localhost:5000/api/messages', {
+const res = await fetch('https://e12e1604-b13d-4d47-b41d-b1acaba486e1-00-1l4f4dsidu3ap.pike.replit.dev/api/messages', {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)
